@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rental Analysis — 11638 Boldface Drive, Orlando FL 32832 | Verandah Properties</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#008C82; --teal-deep:#00625B; --gold:#C9A227; --charcoal:#1A1A1A;
+  --body:#1F1F1F; --muted:#5A5651; --strong:#0F0F0F;
+  --line:#E2DED7; --paper:#FBFAF7; --panel:#F3F1EC;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--body);
+  font-family:'Jost',system-ui,sans-serif;font-weight:400;font-size:17px;line-height:1.65}
+.wrap{max-width:960px;margin:0 auto;padding:0 26px}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;color:var(--charcoal)}
+h1{font-size:2.7rem;line-height:1.12;margin:0 0 .4rem}
+h2{font-size:1.9rem;line-height:1.2;margin:0 0 .9rem}
+h3{font-size:1.25rem;margin:1.4rem 0 .5rem}
+p{margin:0 0 1rem;max-width:74ch}
+b,strong{font-weight:600;color:var(--strong)}
+
+.mast{background:var(--charcoal);color:#F5F3EE;padding:30px 0 26px}
+.brandline{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.mark{width:34px;height:34px;border-radius:50%;background:var(--teal);color:#fff;
+  font-family:'Cormorant Garamond',serif;font-size:22px;display:inline-flex;
+  align-items:center;justify-content:center;flex:0 0 auto;transform:translateY(6px)}
+.brandname{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:#F5F3EE}
+.mast .tag{color:#A9A49C;font-size:.85rem;margin-left:auto}
+.mast h1{color:#FBFAF7;margin-top:20px}
+.mast .sub{color:#B8B2A8;font-size:1rem;margin:0}
+
+.rec{background:var(--teal);color:#fff;padding:34px 0 32px}
+.rec h2{color:#fff;margin-bottom:.3rem;font-size:1.5rem}
+.rec .lead{color:#D6EDEA;max-width:70ch;margin-bottom:24px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+  background:rgba(255,255,255,.28);border-radius:10px;overflow:hidden}
+.step{background:var(--teal);padding:20px}
+.step .k{font-size:.82rem;color:#CDE8E5;margin-bottom:6px}
+.step .v{font-family:'Cormorant Garamond',serif;font-size:2.4rem;line-height:1;color:#fff}
+.step .n{font-size:.87rem;color:#CDE8E5;margin-top:7px;line-height:1.45}
+.step:first-child{background:var(--teal-deep)}
+
+section{padding:40px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:none}
+
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));
+  border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;margin:0 0 20px}
+.fact{padding:14px 17px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fact .k{font-size:.79rem;color:var(--muted);margin-bottom:2px}
+.fact .v{font-weight:600;color:var(--strong)}
+.confirm{color:#8A6D0B;background:#FBF3D8;padding:1px 7px;border-radius:4px;font-weight:600}
+
+details{border:1px solid var(--line);border-radius:8px;background:#fff;margin:6px 0 20px}
+summary{cursor:pointer;padding:13px 18px;font-weight:600;color:var(--teal-deep);
+  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:'Jost',sans-serif;font-size:1.4rem;color:var(--gold);line-height:1}
+details[open] summary::after{content:"\2212"}
+summary:hover{background:var(--panel)}
+summary:focus-visible{outline:2px solid var(--teal);outline-offset:-2px}
+.dbody{padding:2px 18px 16px}
+.dbody p:last-child,.dbody ul:last-child,.dbody .tscroll:last-child{margin-bottom:0}
+
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 12px}
+table{border-collapse:collapse;width:100%;font-size:.9rem;background:#fff;min-width:620px}
+th{background:var(--panel);color:var(--strong);font-weight:600;text-align:left;
+  padding:10px 11px;border-bottom:2px solid var(--line);white-space:nowrap}
+td{padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+tr.hi td{background:#E6F3F1;font-weight:600}
+tr.note td{background:#FBF3D8}
+td.num,th.num{text-align:right;white-space:nowrap}
+caption{caption-side:bottom;text-align:left;color:var(--muted);font-size:.85rem;padding-top:8px}
+.pill{display:inline-block;font-size:.77rem;padding:2px 8px;border-radius:20px;font-weight:500}
+.fast{background:#DFF0EC;color:#00625B}
+.slow{background:#F6E3DE;color:#8A3B26}
+
+.pull{border-left:4px solid var(--gold);background:#fff;padding:17px 21px;
+  border-radius:0 8px 8px 0;margin:0 0 20px}
+.pull p:last-child{margin-bottom:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px}
+.card p:last-child{margin-bottom:0}
+.card h3{margin-top:0}
+ul{margin:0 0 1rem;padding-left:1.15rem;max-width:74ch}
+li{margin-bottom:.45rem}
+
+footer{background:var(--charcoal);color:#B8B2A8;padding:32px 0;font-size:.9rem}
+footer .sig{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:var(--gold);margin-bottom:8px}
+
+@media(max-width:760px){
+  body{font-size:16px}
+  h1{font-size:2rem} h2{font-size:1.55rem}
+  .steps,.grid2{grid-template-columns:1fr}
+  .mast .tag{margin-left:0;width:100%}
+}
+@media print{
+  body{background:#fff}
+  section{page-break-inside:avoid}
+  summary::after{content:""}
+}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="brandline">
+      <span class="mark">V</span>
+      <span class="brandname">Verandah Properties, LLC</span>
+      <span class="tag">Licensed Florida Real Estate Broker · CQ1048619 · NARPM Member</span>
+    </div>
+    <h1>Rental Analysis</h1>
+    <p class="sub">11638 Boldface Drive, Orlando, FL 32832 &nbsp;·&nbsp; Storey Park, Lake Nona &nbsp;·&nbsp; September 9, 2026</p>
+  </div>
+</header>
+
+<div class="rec">
+  <div class="wrap">
+    <h2>Our recommendation</h2>
+    <p class="lead">List at a number the market immediately reads as a value, then let the first five days tell us what to do next. The goal is a pool of interested renters large enough that we get to choose the best one.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="k">Launch price</div><div class="v">$2,650</div>
+        <div class="n">The lowest price in Storey Park, on one of the largest homes.</div>
+      </div>
+      <div class="step">
+        <div class="k">Day 5 checkpoint</div><div class="v">$2,550</div>
+        <div class="n">If interest isn't enough to let us select, we move by an amount renters notice.</div>
+      </div>
+      <div class="step">
+        <div class="k">Next step</div><div class="v">$2,495</div>
+        <div class="n">A step, not a bottom. We keep reading the market and moving with it.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<section>
+  <h2>The property and where it sits</h2>
+  <div class="facts">
+    <div class="fact"><div class="k">Address</div><div class="v">11638 Boldface Dr</div></div>
+    <div class="fact"><div class="k">Community</div><div class="v">Storey Park, Lake Nona</div></div>
+    <div class="fact"><div class="k">Type</div><div class="v">Townhome, 3 BR / 2.5 BA</div></div>
+    <div class="fact"><div class="k">Heated sq ft</div><div class="v">1,717</div></div>
+    <div class="fact"><div class="k">Year built</div><div class="v">2024</div></div>
+    <div class="fact"><div class="k">Garage</div><div class="v">2-car, 420 sq ft</div></div>
+    <div class="fact"><div class="k">Furnishing</div><div class="v">Unfurnished</div></div>
+    <div class="fact"><div class="k">Lease term</div><div class="v">12 months</div></div>
+    <div class="fact"><div class="k">Available</div><div class="v"><span class="confirm">after remediation</span></div></div>
+  </div>
+  <p>We compared your home against 30 townhomes in the Lake Nona corridor — Storey Park, Meridian Parks and Starwood — from June 1 to September 9, 2026. Fourteen leased, two are pending, and fourteen are still sitting unleased. We used townhomes only; single-family homes compete for a different renter and would have made the picture look better than it is.</p>
+  <p>At 1,717 square feet and built in 2024, your home is among the largest and newest three-bedroom townhomes in that set. Only two competitors are bigger, and both are struggling. The closest proven number is <b>11902 Architecture Alley</b> — a Storey Park three-bedroom at 1,755 square feet that leased at $2,700 in 9 days at its full asking price.</p>
+  <p>The caution: being new is not currently paying a premium here. 11525 Straits Way, built 2024, leased at $2,450. 9844 Walkway, built 2025, has sat 77 days. New construction is exactly what is flooding this market.</p>
+
+  <details>
+    <summary>More on how your home compares</summary>
+    <div class="dbody">
+      <p>Only 9844 Walkway (1,800 sq ft, 77 days, already cut from $2,850 to $2,700) and 9855 Walkway (1,950 sq ft, 38 days) exceed your square footage. The largest three-bedroom that actually leased was 1,755 sq ft.</p>
+      <p><b>11811 Pulitzer Place</b> is a Storey Park three-bedroom at exactly 1,717 square feet, five years older, currently asking $2,800 — but only three days on market, so it has told us nothing yet.</p>
+      <p>The Orange County record confirms 931 sq ft on the ground floor plus 786 upstairs, a 420 sq ft two-car garage, and 2,475 sq ft gross.</p>
+    </div>
+  </details>
+</section>
+
+<section>
+  <h2>What has happened to this market</h2>
+  <p>Two things changed at once. Sales stalled, so builders cut prices — the new-construction townhomes in this comp set sold 5% to 12% below their original asking prices. And owners who could not sell converted to rentals rather than keep paying a mortgage on an empty house.</p>
+  <p>Both streams landed in the same rental pool. Fourteen townhomes leased in the fourteen weeks to September 9 — about four a month — while fourteen more sit unleased today. That is roughly three and a half months of standing inventory ahead of any new listing, unless its price moves it to the front of the line.</p>
+  <p>The competition is still growing, which is why timing matters. A price that looks competitive today looks ordinary in six weeks. Anyone who lists high planning to reduce later ends up reducing into a bigger field than they started with — and family relocations slow sharply after August, so the pool of renters is shrinking at the same time.</p>
+
+  <details>
+    <summary>See the evidence behind this</summary>
+    <div class="dbody">
+      <h3>Builders cutting on new construction</h3>
+      <div class="tscroll">
+      <table>
+        <thead><tr><th>New-construction townhome</th><th class="num">First asking</th><th class="num">Sold for</th><th class="num">Change</th><th>Closed</th></tr></thead>
+        <tbody>
+          <tr><td>9972 Red Canoe Aly</td><td class="num">$455,990</td><td class="num">$399,990</td><td class="num">−12.3%</td><td>Jun 2026</td></tr>
+          <tr><td>10011 Gazebo Aly</td><td class="num">$416,990</td><td class="num">$382,293</td><td class="num">−8.3%</td><td>Jul 2026</td></tr>
+          <tr><td>9872 Walkway Dr</td><td class="num">$445,990</td><td class="num">$415,190</td><td class="num">−6.9%</td><td>Mar 2026</td></tr>
+          <tr><td>10023 Gazebo Aly</td><td class="num">$446,990</td><td class="num">$423,801</td><td class="num">−5.2%</td><td>Jul 2026</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <h3>Sellers converting to rentals, inside this comp set</h3>
+      <ul>
+        <li><b>11558 Buoy Point Pl</b> — for sale at $393,000 on August 18, withdrawn August 25, leased at $2,450 on August 30.</li>
+        <li><b>11459 Sunsail Ave</b> — sale listing at $430,000 cancelled September 3; the rent was cut to $2,550 the same day.</li>
+        <li><b>11811 Pulitzer Pl</b> — for sale since November 2025, two reductions, expired, relisted in August. Listed for rent September 6.</li>
+        <li><b>12439 Shipwatch St</b> — sale listing cancelled in July; on the rental market since, down from $3,100 to $2,800, still unleased at 46 days.</li>
+      </ul>
+    </div>
+  </details>
+</section>
+
+<section>
+  <h2>The clearest signal in the data</h2>
+  <p>We sorted the fourteen leases by whether the owner got their full asking price. The split settles the pricing question.</p>
+  <div class="grid2">
+    <div class="card">
+      <h3>Leased at 100% of asking</h3>
+      <p><b>9 of 14.</b> Average time on market: <b>31 days.</b> Remove one 110-day outlier and the other eight averaged 21 days.</p>
+      <p>They priced where the market already was, never negotiated, and were done in about three weeks.</p>
+    </div>
+    <div class="card">
+      <h3>Leased below asking</h3>
+      <p><b>5 of 14.</b> Average time on market: <b>72 days.</b></p>
+      <p>They started high, sat, cut, and still took less than they asked. They paid for the experiment twice — in vacant months and in the discount.</p>
+    </div>
+  </div>
+  <p>Across the whole set, owners asked an average of $2,650 and achieved an average of $2,553 — giving back <b>$97 a month</b> from what they wanted. We would rather ask the achievable number on day one than spend two months discovering it.</p>
+
+  <details>
+    <summary>See all 14 leased comparables</summary>
+    <div class="dbody">
+      <div class="tscroll">
+      <table>
+        <thead><tr><th>Address</th><th>Community</th><th class="num">BR</th><th class="num">Sq ft</th><th class="num">Built</th><th class="num">Asked</th><th class="num">Leased</th><th class="num">% ask</th><th class="num">Days</th></tr></thead>
+        <tbody>
+          <tr><td>11299 Listening Dr</td><td>Storey Park</td><td class="num">3</td><td class="num">1,599</td><td class="num">2023</td><td class="num">$2,900</td><td class="num">$2,900</td><td class="num">100%</td><td class="num"><span class="pill fast">11</span></td></tr>
+          <tr><td>12455 Shipwatch</td><td>Meridian Parks</td><td class="num">3</td><td class="num">1,627</td><td class="num">2021</td><td class="num">$2,800</td><td class="num">$2,800</td><td class="num">100%</td><td class="num"><span class="pill fast">33</span></td></tr>
+          <tr><td>9848 Walkway Dr</td><td>Meridian Parks</td><td class="num">3</td><td class="num">1,447</td><td class="num">2024</td><td class="num">$2,750</td><td class="num">$2,750</td><td class="num">100%</td><td class="num">50</td></tr>
+          <tr><td>11902 Architecture Aly</td><td>Storey Park</td><td class="num">3</td><td class="num">1,755</td><td class="num">2017</td><td class="num">$2,700</td><td class="num">$2,700</td><td class="num">100%</td><td class="num"><span class="pill fast">9</span></td></tr>
+          <tr><td>12407 Shipwatch St</td><td>Starwood N-14</td><td class="num">4</td><td class="num">1,678</td><td class="num">2025</td><td class="num">$2,700</td><td class="num">$2,700</td><td class="num">100%</td><td class="num"><span class="pill slow">110</span></td></tr>
+          <tr><td>12248 Linear St</td><td>Starwood N-14</td><td class="num">4</td><td class="num">1,627</td><td class="num">2022</td><td class="num">$2,650</td><td class="num">$2,650</td><td class="num">100%</td><td class="num"><span class="pill fast">8</span></td></tr>
+          <tr><td>7732 Clove Hitch Way</td><td>Starwood N-1C</td><td class="num">3</td><td class="num">1,678</td><td class="num">2023</td><td class="num">$2,600</td><td class="num">$2,600</td><td class="num">100%</td><td class="num"><span class="pill fast">16</span></td></tr>
+          <tr><td>11578 Buoy Point Pl</td><td>Starwood N-1B</td><td class="num">3</td><td class="num">1,447</td><td class="num">2022</td><td class="num">$2,550</td><td class="num">$2,550</td><td class="num">100%</td><td class="num"><span class="pill fast">19</span></td></tr>
+          <tr><td>11525 Straits Way</td><td>Starwood</td><td class="num">3</td><td class="num">1,678</td><td class="num">2024</td><td class="num">$2,450</td><td class="num">$2,450</td><td class="num">100%</td><td class="num"><span class="pill fast">26</span></td></tr>
+          <tr><td>7846 Clove Hitch Way</td><td>Starwood N-1C</td><td class="num">3</td><td class="num">1,447</td><td class="num">2023</td><td class="num">$2,600</td><td class="num">$2,550</td><td class="num">98.1%</td><td class="num"><span class="pill slow">80</span></td></tr>
+          <tr><td>11912 Founders St</td><td>Starwood N-1A</td><td class="num">3</td><td class="num">1,680</td><td class="num">2019</td><td class="num">$2,599</td><td class="num">$2,550</td><td class="num">98.1%</td><td class="num"><span class="pill slow">56</span></td></tr>
+          <tr><td>11558 Buoy Point Pl</td><td>Starwood N-1B</td><td class="num">3</td><td class="num">1,627</td><td class="num">2022</td><td class="num">$2,500</td><td class="num">$2,450</td><td class="num">98.0%</td><td class="num"><span class="pill slow">83</span></td></tr>
+          <tr><td>11551 Sunsail Ave</td><td>Starwood N-1C</td><td class="num">3</td><td class="num">1,627</td><td class="num">2023</td><td class="num">$2,700</td><td class="num">$2,500</td><td class="num">92.6%</td><td class="num">22</td></tr>
+          <tr class="note"><td>11755 Tidal Aly</td><td>Starwood N-1B</td><td class="num">3</td><td class="num">1,470</td><td class="num">2022</td><td class="num">$2,600</td><td class="num">$1,590</td><td class="num">61.2%</td><td class="num"><span class="pill slow">117</span></td></tr>
+        </tbody>
+        <caption>The highlighted row is an outlier excluded from our averages — it shows what the far end of holding out looks like.</caption>
+      </table>
+      </div>
+      <p>Excluding that outlier, the eleven three-bedroom leases averaged <b>$2,618</b>, median <b>$2,550</b>. The two four-bedroom leases averaged $2,675.</p>
+    </div>
+  </details>
+</section>
+
+<section>
+  <h2>Your competition today</h2>
+  <p>Fourteen townhomes have not found a renter. Five are in Storey Park, stacked between $2,695 and $2,850, and four of those five have been sitting 33 to 46 days. Meanwhile two Starwood competitors have already cut all the way to $2,550 and are still unleased at 56 and 62 days, while 11525 Straits Way leased at $2,450 in 26 days.</p>
+  <p>Renters here are choosing on price. Your advantage is that Storey Park earns a higher number — but only if you are the value inside it.</p>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Address</th><th>Community</th><th class="num">BR</th><th class="num">Sq ft</th><th class="num">Started at</th><th class="num">Asking now</th><th class="num">Days</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td>11638 Boldface Dr — your home</td><td>Storey Park</td><td class="num">3</td><td class="num">1,717</td><td class="num">—</td><td class="num">$2,650</td><td class="num">0</td></tr>
+      <tr><td>11811 Pulitzer Pl</td><td>Storey Park</td><td class="num">3</td><td class="num">1,717</td><td class="num">$2,800</td><td class="num">$2,800</td><td class="num">3</td></tr>
+      <tr><td>9722 Character Dr</td><td>Storey Park</td><td class="num">3</td><td class="num">1,518</td><td class="num">$2,700</td><td class="num">$2,695</td><td class="num">6</td></tr>
+      <tr><td>9972 Red Canoe Aly</td><td>Meridian Parks</td><td class="num">3</td><td class="num">1,476</td><td class="num">$2,600</td><td class="num">$2,600</td><td class="num">12</td></tr>
+      <tr><td>10023 Gazebo Aly</td><td>Meridian Parks</td><td class="num">4</td><td class="num">1,678</td><td class="num">$2,800</td><td class="num">$2,795</td><td class="num">33</td></tr>
+      <tr><td>11275 Listening Dr</td><td>Storey Park</td><td class="num">3</td><td class="num">1,636</td><td class="num">$2,850</td><td class="num">$2,775</td><td class="num">36</td></tr>
+      <tr><td>11763 Boldface Dr</td><td>Storey Park</td><td class="num">4</td><td class="num">1,858</td><td class="num">$2,900</td><td class="num">$2,850</td><td class="num">37</td></tr>
+      <tr><td>9855 Walkway Dr</td><td>Meridian Parks</td><td class="num">3</td><td class="num">1,950</td><td class="num">$2,800</td><td class="num">$2,800</td><td class="num">38</td></tr>
+      <tr><td>10011 Gazebo Aly</td><td>Meridian Parks</td><td class="num">3</td><td class="num">1,476</td><td class="num">$2,700</td><td class="num">$2,700</td><td class="num">42</td></tr>
+      <tr><td>11239 Listening Dr</td><td>Storey Park</td><td class="num">3</td><td class="num">1,636</td><td class="num">$2,900</td><td class="num">$2,800</td><td class="num">45</td></tr>
+      <tr><td>12439 Shipwatch St</td><td>Meridian Parks</td><td class="num">3</td><td class="num">1,633</td><td class="num">$3,100</td><td class="num">$2,800</td><td class="num">46</td></tr>
+      <tr><td>11549 Straits Way</td><td>Starwood N-1C</td><td class="num">3</td><td class="num">1,627</td><td class="num">$2,650</td><td class="num">$2,550</td><td class="num">56</td></tr>
+      <tr><td>11546 Buoy Point Pl</td><td>Starwood N-1B</td><td class="num">4</td><td class="num">1,476</td><td class="num">$2,900</td><td class="num">$2,800</td><td class="num">57</td></tr>
+      <tr><td>11459 Sunsail Ave</td><td>Starwood N-1C</td><td class="num">3</td><td class="num">1,627</td><td class="num">$2,800</td><td class="num">$2,550</td><td class="num">62</td></tr>
+      <tr><td>9844 Walkway Dr</td><td>Starwood N-4</td><td class="num">3</td><td class="num">1,800</td><td class="num">$2,850</td><td class="num">$2,700</td><td class="num">77</td></tr>
+    </tbody>
+    <caption>Two homes are pending: 9872 Walkway Dr at $2,700 after 51 days, 11942 Dune Aly at $2,800 after 7 days.</caption>
+  </table>
+  </div>
+</section>
+
+<section>
+  <h2>How we read the comparables</h2>
+
+  <h3>Size barely moves rent here</h3>
+  <p>Every three-bedroom lease except the outlier landed between $2,450 and $2,900, across homes from 1,447 to 1,755 square feet. Renters in this corridor are buying a three-bedroom Lake Nona townhome at a monthly number, not paying by the foot. At $2,650 your home rents at $1.54 per square foot — exactly what 11902 Architecture Alley achieved, and the median for the larger half of this set. Your size is an advantage in getting chosen, not a reason to ask for more.</p>
+
+  <h3>The fourth bedroom is worth about $100 — and no speed</h3>
+  <p>Comparing identical square footages, four-bedroom homes earned $67 to $175 more per month, so we discount the five four-bedroom comparables by $100 to read them as three-bedroom equivalents. That premium buys nothing in time: the four-bedroom that earned the biggest difference needed 110 days, and all three four-bedroom homes on the market today are still sitting at 33, 37 and 57 days.</p>
+
+  <h3>Gated status is not a factor; amenities set the ceiling, not the price</h3>
+  <p>Not one of the 30 townhomes is in a gated community. There is no gated product competing here, so there is no premium available for a gate and no penalty for its absence.</p>
+  <p>Storey Park does have the deepest amenity package of the three communities — two clubhouses, resort and lap pools, splash pad, spa, fitness center, tennis, dog park, trails and a restaurant. That advantage is real, and it is why we are recommending above the Starwood evidence rather than at it. But the five Storey Park homes asking $2,695 to $2,850 have the same clubhouses and the same pools, and four are sitting. Amenities earn your home the right to be considered at the top of the corridor. They do not get it leased.</p>
+
+  <details>
+    <summary>See the four-bedroom adjustment worked out</summary>
+    <div class="dbody">
+      <div class="tscroll">
+      <table>
+        <thead><tr><th>Size</th><th>4-bedroom result</th><th>3-bedroom results, same size</th><th class="num">Difference</th></tr></thead>
+        <tbody>
+          <tr><td>1,627 sq ft</td><td>12248 Linear St leased $2,650</td><td>$2,800 / $2,500 / $2,450 (avg $2,583)</td><td class="num">+$67</td></tr>
+          <tr><td>1,678 sq ft</td><td>12407 Shipwatch leased $2,700</td><td>$2,600 / $2,450 (avg $2,525)</td><td class="num">+$175</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p>Applying the $100 discount puts the active four-bedroom listings at $2,695 to $2,750 in three-bedroom terms — and they are not leasing at those numbers.</p>
+    </div>
+  </details>
+</section>
+
+<section>
+  <h2>How we lease it: unfurnished, 12 months, pets negotiable</h2>
+
+  <h3>Unfurnished</h3>
+  <p>All 30 listings in this analysis are unfurnished. There is no furnished townhome competing in this corridor, so no local evidence a furnished premium exists. Furnishing would also pull your home out of the long-term renter pool — the families relocating for Medical City, the airport and the schools — and drop it into a much thinner corporate and short-stay pool. With fourteen unleased competitors, shrinking the audience is the last thing we want to do. It also puts every item in the home onto the lease, with inventory lists and wear disputes at move-out, for a premium the market has not demonstrated.</p>
+
+  <h3>Pets must be negotiable</h3>
+  <p>We want to be direct with you about this, because it is a condition of our management rather than a suggestion: <b>we do not take on a property with a blanket no-pet policy.</b> Pets need to stay negotiable, case by case, with us screening every applicant and every animal.</p>
+  <p>The reason is the size of your applicant pool. Roughly two-thirds of American renter households have a pet. A closed door does not filter applicants — it deletes most of them before they ever inquire. With fourteen unleased competitors and five listings stacked inside your own community, that is a cost you cannot absorb. Look at where the closed listings sit today: 10011 Gazebo at 42 days, 11763 Boldface at 37, 11549 Straits at 56, 11546 Buoy Point at 57.</p>
+  <p>There is also a legal reality worth knowing. Assistance animals are not pets under fair housing law, and a qualified request must be accommodated regardless of policy. A no-pet rule does not keep animals out of the home. It only keeps out the applicants who would have paid you for the privilege — and they do pay: comparables here charge a $250 to $500 non-refundable pet fee, a $200 to $400 deposit, and $20 to $50 a month per animal.</p>
+  <div class="pull">
+    <p>Negotiable does not mean unrestricted. You keep the controls: a limit on the number of pets, a weight cap, breed review, a third-party pet profile required from every applicant including those with no pet, a non-refundable fee and monthly pet rent. That gives us the full applicant pool, additional income, and a documented record of every animal in your home.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Why we are pricing under the evidence</h2>
+  <p>A listing price is a marketing decision, not a valuation. What your home is worth and what we should list it at are two different questions, and only the second one gets it leased.</p>
+  <p>The evidence supports $2,700 to $2,800 for a Storey Park three-bedroom on paper. We are recommending <b>$2,650</b>, deliberately underneath it, so you are the obvious value in your own community. 9722 Character Drive is asking $2,695 for 1,518 square feet built the same year — you would be offering 200 more square feet for $45 less, at the lowest price on the Storey Park board. That is the listing a renter screenshots and sends to their spouse.</p>
+  <p>The vacancy arithmetic is why we will not chase the higher number. At $2,650 every vacant day costs <b>$87</b>.</p>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>If we listed at</th><th class="num">Extra per month</th><th class="num">One vacant month costs</th><th class="num">Months to break even</th></tr></thead>
+    <tbody>
+      <tr><td>$2,750</td><td class="num">+$100</td><td class="num">$2,750</td><td class="num">27.5</td></tr>
+      <tr><td>$2,800</td><td class="num">+$150</td><td class="num">$2,800</td><td class="num">18.7</td></tr>
+      <tr><td>$2,850</td><td class="num">+$200</td><td class="num">$2,850</td><td class="num">14.3</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Chasing an extra $100 a month takes over two years to recover if it costs one additional vacant month — and a 12-month lease does not give you two years. On a single term, that trade is a loss before it starts.</p>
+  <p>We are not going to estimate how long it will take to lease. Nobody can know that, and an invented number would only mislead you. Instead we measure: inquiries, showings booked and showings actually attended over the first five days. If that activity is not strong enough for us to <b>choose</b> a well-qualified renter rather than accept whoever appears, we move to $2,550 — not a token cut, a number renters notice. If the market says that is not enough, we go to $2,495 and keep reading it. $2,495 is a step, not a bottom; only the market knows where the bottom is, and our commitment is to keep reacting to it rather than defending a number we picked in advance.</p>
+  <p>The purpose of generating a pool is selection, not acceptance. One application means you take that applicant or stay empty. Five applications mean we screen, verify income and rental history, and place the household most likely to pay on time, stay the term, and hand the home back in good condition. That is where the money in a rental is actually made.</p>
+</section>
+
+<section>
+  <h2>Summary</h2>
+  <ul>
+    <li>Lake Nona sales stalled, builders cut new townhomes 5% to 12%, and sellers who could not sell converted to rentals. Both streams landed in the same rental pool.</li>
+    <li>Fourteen of thirty townhomes leased in fourteen weeks; fourteen are still unleased — roughly three and a half months of standing inventory.</li>
+    <li>Homes priced right leased at full asking in about 31 days. Homes priced high sat 72 days and discounted anyway. Owners here gave back an average of $97 a month.</li>
+    <li>Your home is large and new for this set, but size and vintage are not earning premiums right now — they are advantages in being chosen quickly.</li>
+    <li>Nothing here is gated, so that is a non-factor. Storey Park's amenities earn a place at the top of the corridor but do not lease the home on their own.</li>
+    <li>Unfurnished on a 12-month term, and pets negotiable with full screening — the second is a condition of our management, not a preference.</li>
+    <li>Launch at $2,650. Read the first five days. Move to $2,550, then $2,495, and keep pivoting with the market.</li>
+  </ul>
+  <div class="pull">
+    <p>The goal of this entire strategy is to reduce vacancy — the one expense that produces nothing in return. A full home with a well-screened resident is what makes this investment work across this lease and the ones after it.</p>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="sig">Curating Lake Nona's Finest Rental Portfolio</div>
+    <p style="max-width:74ch">Verandah Properties, LLC · Licensed Florida Real Estate Broker CQ1048619 · NARPM Member · 407-415-5478</p>
+    <p style="max-width:74ch;font-size:.84rem;color:#8C877F">This is an opinion of value based on comparable market data and should not be considered an appraisal. Comparable data drawn from Stellar MLS for June 1 through September 9, 2026, deemed reliable but not guaranteed. This analysis reflects the market as of September 9, 2026.</p>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('beforeprint',function(){
+  document.querySelectorAll('details').forEach(function(d){d.open=true;});
+});
+</script>
+
+</body>
+</html>
